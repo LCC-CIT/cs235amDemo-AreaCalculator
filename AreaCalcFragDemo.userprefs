@@ -1,0 +1,16 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.SelectDevice" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AreaCalcFragDemo\RectangleFrag.cs">
+    <Files>
+      <File FileName="AreaCalcFragDemo\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="AreaCalcFragDemo\SelectFrag.cs" Line="1" Column="1" />
+      <File FileName="AreaCalcFragDemo\RectangleFrag.cs" Line="4" Column="4" />
+      <File FileName="AreaCalcFragDemo\AreaCalc.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.AreaCalcFragDemo MonoForAntroid.PreferredDevice="Nexus 4" />
+</Properties>
