@@ -30,7 +30,11 @@ namespace AreaCalcFragDemo
 				double height = double.Parse (heightEditText.Text);
 				double width = double.Parse (widthEditText.Text);
 				AreaCalc calc = new AreaCalc();
-				((MainActivity)this.Activity).DisplayResult(calc.calcTriangleArea(height, width));
+				double result = calc.calcTriangleArea(height, width);
+				if (null != this.Activity.FindViewById (Resource.Id.fragContainer2))	// if it's dual pane (landscape)
+					((MainActivity)this.Activity).DisplayResult(result);
+				else
+					this.Activity.FindViewById<TextView>(Resource.Id.resultTextView).Text = result.ToString();
 			};
 			return view;
 

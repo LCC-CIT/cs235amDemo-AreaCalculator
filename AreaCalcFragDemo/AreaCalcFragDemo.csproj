@@ -52,6 +52,7 @@
     <Compile Include="AreaCalc.cs" />
     <Compile Include="TriangleFrag.cs" />
     <Compile Include="CircleFrag.cs" />
+    <Compile Include="CalculateActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -68,11 +69,14 @@
     <AndroidResource Include="Resources\layout\TriangleFrag.axml" />
     <AndroidResource Include="Resources\drawable\triangle.png" />
     <AndroidResource Include="Resources\drawable\circle.gif" />
+    <AndroidResource Include="Resources\layout-port\Main.axml" />
+    <AndroidResource Include="Resources\layout\CalculateActivity.axml" />
     <AndroidResource Include="Resources\layout\CircleFrag.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Resources\layout-land\" />
     <Folder Include="Resources\layout\" />
+    <Folder Include="Resources\layout-port\" />
   </ItemGroup>
 </Project>

@@ -28,7 +28,11 @@ namespace AreaCalcFragDemo
 			button.Click += delegate {
 				double radius = double.Parse (radiusEditText.Text);
 				AreaCalc calc = new AreaCalc();
-				((MainActivity)this.Activity).DisplayResult(calc.calcCircleArea(radius));
+				double result = calc.calcCircleArea(radius);
+				if (null != this.Activity.FindViewById (Resource.Id.fragContainer2))	// if it's dual pane (landscape)
+					((MainActivity)this.Activity).DisplayResult(result);
+				else
+					this.Activity.FindViewById<TextView>(Resource.Id.resultTextView).Text = result.ToString();
 			};
 			return view;
 
